@@ -1,0 +1,209 @@
+/* CONFIGURACIÓN PREMIUM */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fafbfc;
+    color: #2b3d4f;
+}
+
+/* BARRA DE NAVEGACIÓN MODERNA */
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px); /* Efecto vidrio esmerilado */
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 800;
+    color: #0d6efd;
+    letter-spacing: 1px;
+}
+
+header nav a {
+    color: #4a5568;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+header nav a:hover {
+    color: #0d6efd;
+    background-color: #f0f4f8;
+}
+
+/* SECCIÓN BIENVENIDA (HERO) CON IMAGEN DE FONDO REALISTA */
+.hero {
+    /* Usamos una imagen real de un consultorio dental moderno en alta definición */
+    background: linear-gradient(135deg, rgba(13, 110, 253, 0.85), rgba(13, 202, 240, 0.75)), 
+                url('https://unsplash.com') no-repeat center center/cover;
+    color: white;
+    padding: 160px 10%;
+    text-align: left; /* Alineado a la izquierda se ve más corporativo */
+    display: flex;
+    align-items: center;
+}
+
+.hero-info {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    opacity: 0.95;
+    line-height: 1.6;
+}
+
+/* BOTÓN DE WHATSAPP CON EFECTO DE PULSO EN 3D */
+.btn-principal {
+    background-color: #25d366;
+    color: white;
+    padding: 18px 38px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+.btn-principal:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(37, 211, 102, 0.6);
+    background-color: #1ebd54;
+}
+
+/* SECCIÓN DE SERVICIOS CON DISEÑO DE TARJETAS FLOTANTES */
+.servicios-section {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.servicios-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+/* Línea estética azul debajo del título */
+.servicios-section h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #0d6efd;
+    margin: 15px auto 0 auto;
+    border-radius: 2px;
+}
+
+.servicios-grid {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-servicio {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f1f5f9;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    text-align: left;
+}
+
+.tarjeta-servicio:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(13, 110, 253, 0.08);
+    border-color: #e2e8f0;
+}
+
+.tarjeta-servicio h3 {
+    color: #0d6efd;
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.tarjeta-servicio p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* SECCIÓN DE CONTACTO DIVIDIDA EN DOS COLUMNAS */
+.contacto-section {
+    background-color: white;
+    padding: 100px 10%;
+    text-align: center;
+}
+
+.contacto-section h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 40px;
+}
+
+.contacto-section p {
+    font-size: 16px;
+    color: #475569;
+    margin-bottom: 12px;
+}
+
+/* Estilo avanzado para el mapa integrado */
+.contacto-section iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 400px;
+    border-radius: 24px;
+    margin-top: 40px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06);
+    border: 1px solid #e2e8f0;
+}
+
+/* PIE DE PÁGINA */
+footer {
+    background-color: #0f172a;
+    color: #94a3b8;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    border-top: 1px solid #1e293b;
+}
+
