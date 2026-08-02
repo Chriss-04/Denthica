@@ -207,3 +207,44 @@ footer {
     border-top: 1px solid #1e293b;
 }
 
+/* CONFIGURACIÓN ESPECIAL PARA CELULARES */
+@media (max-width: 768px) {
+    /* Ajustamos la barra de navegación para que el menú no se amontone */
+    header {
+        padding: 15px 5%;
+        flex-direction: column; /* Pone el logo arriba y los botones abajo */
+        gap: 10px;
+    }
+
+    header nav a {
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    /* Ajustamos la sección de bienvenida (Hero) para celulares */
+    .hero {
+        padding: 80px 5%; /* Menos espacio arriba y abajo */
+        text-align: center; /* Centramos el texto para que se lea mejor */
+        background: linear-gradient(135deg, rgba(13, 110, 253, 0.9), rgba(13, 202, 240, 0.85)), 
+                    url('https://unsplash.com') no-repeat center center/cover;
+    }
+
+    .hero h1 {
+        font-size: 32px; /* Letras más chicas para que no se corten */
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .btn-principal {
+        padding: 15px 30px;
+        font-size: 15px;
+        width: 100%; /* El botón ocupa todo el ancho del celular, es más fácil de picar */
+        max-width: 320px;
+    }
+}
